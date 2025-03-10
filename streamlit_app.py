@@ -1,7 +1,7 @@
 import streamlit as st
 
 def main():
-    st.title("GST Liability Bot for Immovable Properties")
+    st.title("GST Liability on renting of Immovable Properties")
     st.write("Welcome to the GST Liability Assistant!")
     ask_type_of_property()
 
@@ -69,8 +69,8 @@ def handle_hostel_unregistered():
         st.success("**Answer:** Exempt.")
 
 def handle_beneficiary_type():
-    st.subheader("Select beneficiary type:")
-    beneficiary_type = st.radio("Choose the beneficiary type:", ["By education institutions", "Other than educational institution"])
+    st.subheader("Select service provider type:")
+    beneficiary_type = st.radio("Choose the service provider type:", ["By education institutions", "Other than educational institution"])
     
     if beneficiary_type == "By education institutions":
         st.success("**Answer:** Exempt.")
